@@ -1,0 +1,143 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+/* Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+/* Global Styles */
+body {
+    background: white;
+    color: black;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Sections - Flowing Layout */
+section {
+    background: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Profile Photo */
+.round-frame {
+    display: flex;
+    justify-content: center;
+}
+
+.round-frame img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Video Styling */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.video-container video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #141414;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Links */
+a {
+    color: rgb(42, 42, 155);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.social-icons a {
+    font-size: 28px;
+    transition: transform 0.3s ease-in-out;
+    color: #ffffff;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Social Media Icon Colors */
+.fa-x-twitter { color: #ffffff; } /* X (Twitter) */
+.fa-linkedin { color: #ffffff; }
+.fa-github { color: #ffffff; }
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
