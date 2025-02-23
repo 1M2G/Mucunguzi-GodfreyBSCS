@@ -1,143 +1,115 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Poppins:wght@500&display=swap');
 
-/* Font Awesome for icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
 
-/* Global Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
-    background: white;
-    color: black;
-    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-family: "Poppins", serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-/* Header */
-header {
-    text-align: center;
-    padding: 30px 20px;
-    background: black;
-    color: white;
+/* Container to hold tabs and content */
+.container {
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Tab Navigation Styles */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
     margin-bottom: 20px;
 }
 
-/* Main Container */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+li a {
+    color: #333;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
 }
 
-/* Sections - Flowing Layout */
-section {
-    background: none;
-    padding: 10px 0;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+li a:hover {
+    padding-bottom: 6px;
+    border-bottom: 3px solid blueviolet;
 }
 
-/* Profile Photo */
-.round-frame {
-    display: flex;
-    justify-content: center;
+li a.active {
+    color: blueviolet;
+    border-bottom: 3px solid blueviolet;
 }
 
-.round-frame img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Video Styling */
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.video-container video {
-    width: 80%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background: #141414;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background: #f9f9f9;
-}
-
-/* Links */
-a {
-    color: rgb(42, 42, 155);
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #ff0000;
-}
-
-/* Social Media Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Tab Content Styling */
+.wrapper_tab-content {
     padding: 20px;
 }
 
-.social-icons a {
-    font-size: 28px;
-    transition: transform 0.3s ease-in-out;
-    color: #ffffff;
+.tab-content {
+    display: none;
 }
 
-.social-icons a:hover {
-    transform: scale(1.2);
+.tab-content.content-visible {
+    display: block;
 }
 
-/* Social Media Icon Colors */
-.fa-x-twitter { color: #ffffff; } /* X (Twitter) */
-.fa-linkedin { color: #ffffff; }
-.fa-github { color: #ffffff; }
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+}
 
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
-    color: white;
-    border-radius: 5px;
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    font-weight: 600;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li a {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
 }
