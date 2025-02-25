@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <header style="display: flex; justify-content: space-between; align-items: center; background: #007bff; color: white; padding: 15px;">
+        <h1 id="welcome-message" style="margin: 0;">Welcome to Your Dashboard</h1>
+        <button onclick="logout()" style="background: #dc3545; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px;">Logout</button>
+    </header>
+
+    <main style="padding: 20px;">
+        <section class="intro" style="background: white; padding: 15px; margin: 15px 0; border-radius: 8px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);">
+            <h2 style="margin: 0;">Welcome to Your Personal Dashboard</h2>
+            <p>Here, you can manage your activities, track progress, and explore useful resources.</p>
+        </section>
+
+        <section class="web-programming" style="background: white; padding: 15px; margin: 15px 0; border-radius: 8px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);">
+            <h2 style="margin: 0;">Introduction to Web Programming</h2>
+            <p>
+                Web programming involves designing and developing websites using languages like 
+                <strong>HTML, CSS, JavaScript, and backend technologies</strong>. It enables dynamic 
+                and interactive user experiences.
+            </p>
+            <p>
+                Some popular frameworks include <em>React.js, Angular, and Vue.js</em> for the frontend,
+                while <em>Node.js, Django, and Flask</em> are common for backend development.
+            </p>
+        </section>
+    </main>
+
+    <script src="action.js"></script>
+
+</body>
+</html>
