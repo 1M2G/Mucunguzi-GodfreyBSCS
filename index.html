@@ -9,38 +9,58 @@
 <body>
     
     <div class="form-container">
-        <h2>Login</h2>
-        <form>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" name="username">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <button type="button" id="togglePassword" class="toggle-btn">📭</button>
-            </div>
-            <button type="submit" class="btn">Login</button>
-        </form>
-        <div class="divider">OR</div>
-        <h2>Register</h2>
-        <form>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" name="email">
-            </div>
-            <div class="form-group">
-                <label for="new-password">New Password</label>
-                <input type="new-password" name="new-password">
-            </div>
-            <div class="form-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="confirm-password" name="confirm-password">
-            </div>
-            <button type="submit" class="btn">Register</button>
-        </form>
+        <!-- Login Form -->
+        <div id="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username *</label>
+                    <input type="text" name="username" id="username" placeholder="Enter username" required>
+                    <div class="error" id="login-username-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" name="password" id="password-login" placeholder="Enter password" required>
+                    <button type="button" id="toggle-password-login">📭</button>
+                    <div class="error" id="login-password-error"></div>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p><a href="#" id="show-register">Register</a></p>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-container" style="display: none;">
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username">Username *</label>
+                    <input type="text" name="username" id="username-register" placeholder="Enter username" required>
+                    <div class="error" id="register-username-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email" required>
+                    <div class="error" id="register-email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">New Password *</label>
+                    <input type="password" name="new-password" id="new-password" placeholder="Enter new password" required>
+                    <button type="button" id="toggle-password-register">📭</button>
+                    <div class="error" id="register-new-password-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password *</label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
+                    <button type="button" id="toggle-password-confirm">📭</button>
+                    <div class="error" id="register-confirm-password-error"></div>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <p><a href="#" id="show-login">Login</a></p>
+        </div>
     </div>
 
+    <script src="action.js"></script>
 </body>
-<script src="action.js"></script>
 </html>

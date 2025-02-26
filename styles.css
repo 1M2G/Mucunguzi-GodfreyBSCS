@@ -1,3 +1,4 @@
+/* Reset global styles */
 * {
     margin: 0px;
     padding: 0px;
@@ -5,9 +6,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* Body Styles */
 body {
     min-height: 100vh;
-    background-image:linear-gradient(rgba(111, 90, 130, 0.7), rgba(111, 90, 130, 0.7)), url("/img/1140033.jpg");
+    background-image: linear-gradient(rgba(111, 90, 130, 0.7), rgba(111, 90, 130, 0.7)), url("/img/1140033.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -15,6 +17,7 @@ body {
     align-items: center;
 }
 
+/* Form Container */
 .form-container {
     width: 425px;
     background-color: #fff;
@@ -24,29 +27,43 @@ body {
     padding: 20px;
 }
 
+/* Form Heading */
 .form-container h2 {
     color: #333;
     margin-bottom: 15px;
 }
 
+/* Form Group Styles */
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Increased space for better spacing */
 }
 
+/* Label Styles */
 .form-group label {
     color: #666;
     display: block;
     margin-bottom: 5px;
 }
 
+/* Input Fields Styles */
 .form-group input {
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
     padding: 10px;
     width: 100%;
+    font-size: 16px; /* Adjust font size for better readability */
 }
 
+/* Error Message Styles */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold; /* Make error messages stand out */
+}
+
+/* Submit Button Styles */
 .btn {
     width: 100%;
     background-color: #1e90ff;
@@ -65,6 +82,7 @@ body {
     background-color: #0066ff;
 }
 
+/* Divider Styles */
 .divider {
     background-color: #e6e6e6;
     color: #666;
@@ -72,4 +90,48 @@ body {
     margin: 10px 0px;
     padding: 10px;
     text-align: center;
+}
+
+/* Password Toggle Button */
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Adjust positioning */
+    right: 15px; /* Positioned on the right side of the input field */
+    top: 30%; /* Vertical centering */
+    z-index: 2; /* Ensure it's on top of the input */
+}
+
+/* Register Form Initially Hidden */
+#register-container {
+    display: none;
+}
+
+/* Additional Styling for Links */
+p a {
+    color: #1e90ff;
+    text-decoration: none;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%; /* Make form container more responsive */
+        padding: 15px;
+    }
+
+    .form-group input, .btn {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .toggle-btn {
+        right: 10px; /* Adjust positioning for smaller screens */
+    }
 }
