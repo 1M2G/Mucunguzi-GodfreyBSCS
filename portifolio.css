@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.round-frame img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(34, 170, 211);
+}
+
+th{
+    background-color: var(--accent-color);
+    color: #c71212;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* General styles for social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Style the icons */
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #333; /* Default color */
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Hover effects */
+.social-icons a:hover {
+    color: #0073e6;
+    transform: scale(1.2); /* Slight enlargement on hover */
+}
+
+
+.bg-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+[data-theme="dark"]{
+    --background-color: #222222;
+    --text-color: #ffffff;
+    --accent-color: #1e90ff;
+}
+
+.dg-button:hover {
+    background-color: #45a049;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #007bff;
+}
+
+a {
+    color: var(--accent-color);
+}
+
+@media(max-width: 768px){
+    .container {
+        width: 95%;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+}

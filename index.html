@@ -3,64 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Register Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mucunguzi Godfrey's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portifolio.css"/>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    
-    <div class="form-container">
-        <!-- Login Form -->
-        <div id="login-container">
-            <h2>Login</h2>
-            <form id="login-form">
-                <div class="form-group">
-                    <label for="username">Username *</label>
-                    <input type="text" name="username" id="username" placeholder="Enter username" required>
-                    <div class="error" id="login-username-error"></div>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password *</label>
-                    <input type="password" name="password" id="password-login" placeholder="Enter password" required>
-                    <button type="button" id="toggle-password-login">📭</button>
-                    <div class="error" id="login-password-error"></div>
-                </div>
-                <button type="submit" class="btn">Login</button>
-            </form>
-            <p><a href="#" id="show-register">Register</a></p>
-        </div>
+    <button id="theme-toggle">click</button>
+    <header>
+        <h1>👋👋 Welcome to Mucunguzi Godfrey's Portfolio</h1>
+        <p>I am a passionate second-year Computer Science student at Uganda Christian University...</p>
+    </header>
 
-        <!-- Register Form -->
-        <div id="register-container" style="display: none;">
-            <h2>Register</h2>
-            <form id="register-form">
-                <div class="form-group">
-                    <label for="username">Username *</label>
-                    <input type="text" name="username" id="username-register" placeholder="Enter username" required>
-                    <div class="error" id="register-username-error"></div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" name="email" id="email" placeholder="Enter email" required>
-                    <div class="error" id="register-email-error"></div>
-                </div>
-                <div class="form-group">
-                    <label for="new-password">New Password *</label>
-                    <input type="password" name="new-password" id="new-password" placeholder="Enter new password" required>
-                    <button type="button" id="toggle-password-register">📭</button>
-                    <div class="error" id="register-new-password-error"></div>
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password *</label>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
-                    <button type="button" id="toggle-password-confirm">📭</button>
-                    <div class="error" id="register-confirm-password-error"></div>
-                </div>
-                <button type="submit" class="btn">Register</button>
-            </form>
-            <p><a href="#" id="show-login">Login</a></p>
-        </div>
+
+    <div class="container">
+        <section>
+            <h2>Personal Details</h2>
+            <p><strong>Full Name:</strong> Mucunguzi Godfrey</p>
+            <p><strong>RegNo:</strong> M23B23/025</p>
+            <p><strong>AccessNo:</strong> B20722</p>
+            <p><strong>Course and Year:</strong> Bachelor's of Science in Computer Science, Year 2</p>
+            <p><strong>Hobbies and Interests:</strong> Technology, Hiking, Ministry, Sports</p>
+
+        </section>
+
+        <section>
+            <h2>Profile Photo</h2>
+            <div class="round-frame">
+                <img src="photo1.png" alt="Profile Picture">
+            </div>
+        </section>
+
+        <section>
+            <h2>My Best Hobby</h2>
+            <p>My hobby is hiking because it combines adventure, exercise, and relaxation.</p>
+            <div class="video-container">
+                <video src="video.mp4" width="500" height="500" controls loop autoplay></video>
+            </div>
+        </section>
+
+        <section>
+            <h2>Year 1 Semester 1 Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Mark</th>
+                        <th>CU</th>
+                        <th>GP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Essential Hardware and Software Concepts</td>
+                        <td>81</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Fundamentals of Computing</td>
+                        <td>83</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Structured Programming</td>
+                        <td>80</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics</td>
+                        <td>68</td>
+                        <td>3</td>
+                        <td>3.5</td>
+                    </tr>
+                    <tr>
+                        <td>Writing and Study Skills</td>
+                        <td>64</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Understanding the Old Testament</td>
+                        <td>82</td>
+                        <td>3</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="links-section">
+            <h2>Useful Links</h2>
+           
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> - My favorite learning platform.
+              <br>  <a href="https://cse.ucu.ac.ug/" target="_blank">UCU Computing Website</a> - Official UCU Computing Department site.
+            
+        </section>
     </div>
 
-    <script src="action.js"></script>
+    <footer>
+        <h2>Contact Information</h2>
+        <div class="social-icons">
+            <a href="mailto:mucugodf.39@gmail.com" aria-label="Email Mucunguzi Godfrey"><i class="fas fa-envelope"></i></a>
+            <a href="https://x.com/MucunguziG52201" target="_blank" aria-label="X profile of Mucunguzi Godfrey">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/mucunguzi-godfrey" target="_blank" aria-label="LinkedIn profile of Mucunguzi Godfrey"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MucunguziGodfrey" target="_blank" aria-label="GitHub profile of Mucunguzi Godfrey"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="program.js"></script>
 </body>
 </html>
